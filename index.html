@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>stopwatch</title>
+		<style>
+			body{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				background-color:blue;
+				height:90vh;
+			}
+			.watch{
+				background-color:#7FB3D5;
+				padding:20px;
+				border-radius:8px;
+			}
+			.watch h1{
+				font-size:60px;
+			}
+			ol{
+				height:80px;
+				overflow-y:scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="watch">
+			<h1>00:00:00:00</h1>
+			<button onclick="start()" class="start">start</button>
+			<button onclick="stop()" class="stop">stop</button>
+			<button onclick="reset()"class="reset">reset</button>
+			<button onclick="lap()">lap</button>
+			<ol>
+				
+			</ol>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
